@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "grpc-py"
+version = "0.1.0"
+description = "Example to send pandas dataframes over grpc"
+authors = ["Vitali <pilot@aviatorv.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+grpcio-tools = "^1.65.5"
+pandas = "^2.2.2"
+grpcio = "^1.65.5"
+pyarrow = "^17.0.0"
+yfinance = "^0.2.41"
+isort = "^5.13.2"
+black = "^24.8.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

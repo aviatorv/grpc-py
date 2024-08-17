@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package dataframe;
+
+service DataFrameService {
+  rpc SendDataFrame(DataFrameRequest) returns (DataFrameResponse);
+}
+
+message DataFrameRequest {
+  bytes data = 1;
+}
+
+message DataFrameResponse {
+  string message = 1;
+}
