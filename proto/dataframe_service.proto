@@ -7,7 +7,9 @@ service DataFrameService {
 }
 
 message DataFrameRequest {
-  bytes data = 1;
+  string feed_id = 1; // Unique identifier for the data feed
+  string job_id = 2;  // Unique identifier for the job
+  bytes data = 3;     // Parquet data as bytes
 }
 
 message DataFrameResponse {

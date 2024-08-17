@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(
-    b'\n\x17\x64\x61taframe_service.proto\x12\tdataframe" \n\x10\x44\x61taFrameRequest\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\x0c"$\n\x11\x44\x61taFrameResponse\x12\x0f\n\x07message\x18\x01 \x01(\t2^\n\x10\x44\x61taFrameService\x12J\n\rSendDataFrame\x12\x1b.dataframe.DataFrameRequest\x1a\x1c.dataframe.DataFrameResponseb\x06proto3'
+    b'\n\x17\x64\x61taframe_service.proto\x12\tdataframe"A\n\x10\x44\x61taFrameRequest\x12\x0f\n\x07\x66\x65\x65\x64_id\x18\x01 \x01(\t\x12\x0e\n\x06job_id\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x03 \x01(\x0c"$\n\x11\x44\x61taFrameResponse\x12\x0f\n\x07message\x18\x01 \x01(\t2^\n\x10\x44\x61taFrameService\x12J\n\rSendDataFrame\x12\x1b.dataframe.DataFrameRequest\x1a\x1c.dataframe.DataFrameResponseb\x06proto3'
 )
 
 _globals = globals()
@@ -23,9 +23,9 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, "dataframe_service_pb2", _gl
 if not _descriptor._USE_C_DESCRIPTORS:
     DESCRIPTOR._loaded_options = None
     _globals["_DATAFRAMEREQUEST"]._serialized_start = 38
-    _globals["_DATAFRAMEREQUEST"]._serialized_end = 70
-    _globals["_DATAFRAMERESPONSE"]._serialized_start = 72
-    _globals["_DATAFRAMERESPONSE"]._serialized_end = 108
-    _globals["_DATAFRAMESERVICE"]._serialized_start = 110
-    _globals["_DATAFRAMESERVICE"]._serialized_end = 204
+    _globals["_DATAFRAMEREQUEST"]._serialized_end = 103
+    _globals["_DATAFRAMERESPONSE"]._serialized_start = 105
+    _globals["_DATAFRAMERESPONSE"]._serialized_end = 141
+    _globals["_DATAFRAMESERVICE"]._serialized_start = 143
+    _globals["_DATAFRAMESERVICE"]._serialized_end = 237
 # @@protoc_insertion_point(module_scope)

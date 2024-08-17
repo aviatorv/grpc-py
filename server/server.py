@@ -9,6 +9,9 @@ import pandas as pd
 
 class DataFrameServiceServicer(dataframe_service_pb2_grpc.DataFrameServiceServicer):
     def SendDataFrame(self, request, context):
+        feed_id = request.feed_id
+        job_id = request.job_id
+        print(f"Received request with feed_id: {feed_id}, job_id: {job_id}")
         buffer = io.BytesIO(request.data)
         df = pd.read_parquet(buffer)
 
