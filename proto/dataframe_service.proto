@@ -3,15 +3,22 @@ syntax = "proto3";
 package dataframe;
 
 service DataFrameService {
-  rpc SendDataFrame(DataFrameRequest) returns (DataFrameResponse);
+  rpc GetInitialDataFrame(DataFrameRequest) returns (DataFrameResponse); // Fetch initial large DataFrame
+  rpc StreamUpdates(DataFrameRequest) returns (stream DataFrameUpdate);  // Stream updates in mini-batches or single rows
 }
 
 message DataFrameRequest {
   string feed_id = 1; // Unique identifier for the data feed
   string job_id = 2;  // Unique identifier for the job
-  bytes data = 3;     // Parquet data as bytes
 }
 
 message DataFrameResponse {
   string message = 1;
+  bytes data = 2;     // Parquet data as bytes for the initial DataFrame
+}
+
+message DataFrameUpdate {
+  string feed_id = 1;
+  string job_id = 2;
+  bytes data = 3;     // Parquet data as bytes for single rows or mini-batches
 }
