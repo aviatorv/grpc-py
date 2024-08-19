@@ -1,0 +1,7 @@
+.ag-theme-alpine-dark .price-increase {
+    background-color: rgba(0, 255, 0, 0.5); /* Light green */
+}
+
+.ag-theme-alpine-dark .price-decrease {
+    background-color: rgba(255, 0, 0, 0.5); /* Light red */
+}

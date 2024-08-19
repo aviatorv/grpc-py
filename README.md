@@ -26,3 +26,6 @@ Step 5: Open terminal instance for the server
 
 
 ![alt text](image.png)
+
+
+<video controls src="20240819203539.mp4" title="Title"></video>
